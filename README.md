@@ -74,11 +74,15 @@ This script (`geminiColab.py`) is adapted for use in Google Colab environments. 
 
 ⚠ Note: The Colab file is under construction and may not work correctly.
 
+
+<img width="2096" height="1182" alt="image" src="https://github.com/user-attachments/assets/580cbf32-688f-4a3e-bdc3-6cebf437353d" /> 
+
 🛠 Troubleshooting
 - `selenium_logs.txt` – Contains logs from Selenium for debugging issues.
 - `page_source.html` & `screenshot.png` – Generated if a response isn't captured, showing the page’s HTML source and a screenshot for troubleshooting.
 - Element Not Found/Clickable – The Gemini UI may change, causing CSS selectors/XPaths to break. Update them in `geminiBot.py` or `geminiColab.py` (e.g., `div.ql-editor`, `button[aria-label="Send"]`).
 
-<img width="2096" height="1182" alt="image" src="https://github.com/user-attachments/assets/580cbf32-688f-4a3e-bdc3-6cebf437353d" /> 
+
+
 
 
