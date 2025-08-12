@@ -54,10 +54,14 @@ You can modify this prompt by keeping the base text and adding more specific ins
 - Handles potential login pop-ups.
 - Runs in headless mode (no browser UI visible).
 <br>
+
 ## 📦 Prerequisites
+<br>
 Before running the script, ensure you have Python installed.
 <br>
+
 ## ⚙️ Installation
+<br>
 1. Clone the repository or download the script files (geminiBot.py, geminiColab.py).
 
 2. Install the required Python packages:
@@ -108,6 +112,7 @@ This script is adapted for use in Google Colab.
 - `selenium_logs.txt`: Contains logs from Selenium for debugging.
 - `page_source.html` & `screenshot.png`: Generated if a response isn't captured, showing the page’s HTML source and a screenshot for troubleshooting.
 - Element Not Found/Clickable: The Gemini UI may change, causing CSS selectors/XPaths to break. Update them in `geminiBot.py` or `geminiColab.py` (e.g., `div.ql-editor`, `button[aria-label="Send"]`). 
+
 
 
 
