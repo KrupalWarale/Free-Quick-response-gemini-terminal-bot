@@ -29,6 +29,7 @@ This Python script automates interactions with the Google Gemini web interface u
 <br>
 This method offers significant advantages over free-tier Gemini API keys:
 <br>
+<br>
 ⚡ Blazing Fast Responses: Experience near real-time interactions! While free API keys can often take a fraction of a minute to generate responses, this script delivers responses in mere seconds by directly leveraging the optimized web interface.
 
 🚫 No Rate Limits: Unlike API keys with strict rate limits, this web-scraping approach bypasses such restrictions, allowing for more frequent and extensive use in your projects.
@@ -116,6 +117,7 @@ This script is adapted for use in Google Colab.
 - `selenium_logs.txt`: Contains logs from Selenium for debugging.
 - `page_source.html` & `screenshot.png`: Generated if a response isn't captured, showing the page’s HTML source and a screenshot for troubleshooting.
 - Element Not Found/Clickable: The Gemini UI may change, causing CSS selectors/XPaths to break. Update them in `geminiBot.py` or `geminiColab.py` (e.g., `div.ql-editor`, `button[aria-label="Send"]`). 
+
 
 
 
