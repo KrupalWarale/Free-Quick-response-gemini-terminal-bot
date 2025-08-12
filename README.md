@@ -35,7 +35,9 @@ This method offers significant advantages over free-tier Gemini API keys:
 <br>
 🚫 No Rate Limits: Unlike API keys with strict rate limits, this web-scraping approach bypasses such restrictions, allowing for more frequent and extensive use in your projects.
 <br>
+<br>
 🔗 Backend Integration Ready: This script is ideal for integrating Gemini's capabilities into your backend projects, providing a powerful and free solution for automated text generation, content creation, or intelligent conversational agents.
+<br>
 <br>
 
 🛠️ Crucial Initial Prompt
@@ -118,6 +120,7 @@ This script is adapted for use in Google Colab.
 - `selenium_logs.txt`: Contains logs from Selenium for debugging.
 - `page_source.html` & `screenshot.png`: Generated if a response isn't captured, showing the page’s HTML source and a screenshot for troubleshooting.
 - Element Not Found/Clickable: The Gemini UI may change, causing CSS selectors/XPaths to break. Update them in `geminiBot.py` or `geminiColab.py` (e.g., `div.ql-editor`, `button[aria-label="Send"]`). 
+
 
 
 
