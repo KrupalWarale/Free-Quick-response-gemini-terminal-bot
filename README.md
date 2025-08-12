@@ -1,6 +1,6 @@
 🌟 Gemini Chatbot Automation Script
 
-<img src="https://via.placeholder.com/900x300.png?text=Gemini+Chatbot+Automation" alt="Gemini Chatbot Automation Banner" width="100%">
+<img src="https://images.unsplash.com/photo-1596556102146-5d259c76679b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gemini Chatbot Automation Banner" width="100%">
 This Python script automates interactions with the Google Gemini web interface using Selenium.
 It can send prompts to Gemini and retrieve responses, simulating a text-based chatbot experience.
 
@@ -35,42 +35,42 @@ You can still modify the prompt by keeping this base text and adding more instru
 Before running the script, ensure you have Python installed.
 
 ⚙️ Installation
-1️⃣ Clone the repository or download the script files (geminiBot.py, geminiColab.py).
+1. Clone the repository or download the script files (`geminiBot.py`, `geminiColab.py`).
 
-2️⃣ Install the required Python packages:
+2. Install the required Python packages:
 
 ```bash
 pip install selenium webdriver-manager
 ```
 
 💻 How to Run
-### Local Execution (geminiBot.py)
-1️⃣ Run the script from your terminal:
+### Local Execution (`geminiBot.py`)
+1. Run the script from your terminal:
 
 ```bash
 python geminiBot.py
 ```
 The script will open a headless Chrome browser, navigate to Gemini, send an initial prompt, and then enter a loop where you can type messages and receive responses.
 
-2️⃣ Type `exit` and press Enter to quit the chatbot.
+2. Type `exit` and press Enter to quit the chatbot.
 
-### Google Colab Execution (geminiColab.py)
-This script (geminiColab.py) is adapted for use in Google Colab environments. Here's how to use it:
+### Google Colab Execution (`geminiColab.py`)
+This script (`geminiColab.py`) is adapted for use in Google Colab environments. Here's how to use it:
 
-1️⃣ Upload geminiColab.py to your Colab notebook environment.
+1. Upload `geminiColab.py` to your Colab notebook environment.
 
-2️⃣ Install Dependencies in a Colab cell:
+2. Install Dependencies in a Colab cell:
 
 ```python
 !pip install selenium webdriver-manager
 ```
 
-3️⃣ Run the script from a Colab cell:
+3. Run the script from a Colab cell:
 
 ```python
 %run geminiColab.py
 ```
-💡 For interactive use within a cell, you can copy the contents of geminiColab.py directly into a cell and execute it.
+💡 For interactive use within a cell, you can copy the contents of `geminiColab.py` directly into a cell and execute it.
 
 ⚠ Note: The Colab file is under construction and may not work correctly.
 
@@ -79,4 +79,4 @@ This script (geminiColab.py) is adapted for use in Google Colab environments. He
 - `page_source.html` & `screenshot.png` – Generated if a response isn't captured, showing the page’s HTML source and a screenshot for troubleshooting.
 - Element Not Found/Clickable – The Gemini UI may change, causing CSS selectors/XPaths to break. Update them in `geminiBot.py` or `geminiColab.py` (e.g., `div.ql-editor`, `button[aria-label="Send"]`).
 
-<img src="https://via.placeholder.com/800x250.png?text=Powered+by+Google+Gemini+%7C+Selenium" alt="Footer Banner" width="100%"> 
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af524?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Footer Banner" width="100%"> 
