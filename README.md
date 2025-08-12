@@ -1,4 +1,6 @@
  🌟 Gemini Chatbot Automation Script
+ 
+<img width="614" height="299" alt="image" src="https://github.com/user-attachments/assets/d5b58937-1513-4936-959c-aa88366e2360" />
 
 
 This Python script automates interactions with the Google Gemini web interface using Selenium.
@@ -81,6 +83,7 @@ This script (`geminiColab.py`) is adapted for use in Google Colab environments. 
 - `selenium_logs.txt` – Contains logs from Selenium for debugging issues.
 - `page_source.html` & `screenshot.png` – Generated if a response isn't captured, showing the page’s HTML source and a screenshot for troubleshooting.
 - Element Not Found/Clickable – The Gemini UI may change, causing CSS selectors/XPaths to break. Update them in `geminiBot.py` or `geminiColab.py` (e.g., `div.ql-editor`, `button[aria-label="Send"]`).
+
 
 
 
