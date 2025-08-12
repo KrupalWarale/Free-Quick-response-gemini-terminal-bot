@@ -8,6 +8,8 @@
 <img src="https://github.com/user-attachments/assets/d5b58937-1513-4936-959c-aa88366e2360" alt="Gemini Chatbot Demo" width="600" />
 </div>
 
+
+<br>
 <br>
 
 This Python script automates interactions with the Google Gemini web interface using Selenium. It can send prompts and retrieve responses, simulating a text-based chatbot experience.
@@ -81,15 +83,18 @@ This script is adapted for use in Google Colab.
 💡 For interactive use, you can copy the contents of `geminiColab.py` directly into a Colab cell and execute it.
 
 ⚠ Note: The Colab file is under construction and may not work correctly.
+<br>
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/580cbf32-688f-4a3e-bdc3-6cebf437353d" alt="Example of Gemini chatbot in action" width="800" />
 </div>
+<br>
 
 🛠️ Troubleshooting
 - `selenium_logs.txt`: Contains logs from Selenium for debugging.
 - `page_source.html` & `screenshot.png`: Generated if a response isn't captured, showing the page’s HTML source and a screenshot for troubleshooting.
 - Element Not Found/Clickable: The Gemini UI may change, causing CSS selectors/XPaths to break. Update them in `geminiBot.py` or `geminiColab.py` (e.g., `div.ql-editor`, `button[aria-label="Send"]`). 
+
 
 
 
