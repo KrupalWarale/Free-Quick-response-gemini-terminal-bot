@@ -14,7 +14,7 @@
 
 
 ## 🎯 The Problem statment
-<br
+<br>
 Accessing powerful AI models like Gemini often involves reliance on API keys, especially for integration into custom applications. However, free-tier API keys frequently come with significant limitations, including restrictive rate limits, slower response times, and potential costs for higher usage. This creates a barrier for developers and hobbyists looking to leverage advanced AI capabilities in their projects without incurring expenses or compromising on performance.
   
 <br>
@@ -113,6 +113,7 @@ This script is adapted for use in Google Colab.
 - `selenium_logs.txt`: Contains logs from Selenium for debugging.
 - `page_source.html` & `screenshot.png`: Generated if a response isn't captured, showing the page’s HTML source and a screenshot for troubleshooting.
 - Element Not Found/Clickable: The Gemini UI may change, causing CSS selectors/XPaths to break. Update them in `geminiBot.py` or `geminiColab.py` (e.g., `div.ql-editor`, `button[aria-label="Send"]`). 
+
 
 
 
