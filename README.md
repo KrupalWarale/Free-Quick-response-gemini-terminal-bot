@@ -1,91 +1,89 @@
- 🌟 Gemini Chatbot Automation Script
- 
-<img width="614" height="299" alt="image" src="https://github.com/user-attachments/assets/d5b58937-1513-4936-959c-aa88366e2360" />
+🌟 Gemini Chatbot Automation Script
+<div align="center">
+<img src="https://github.com/user-attachments/assets/d5b58937-1513-4936-959c-aa88366e2360" alt="Gemini Chatbot Demo" width="600" />
+</div>
 
+<br>
 
-This Python script automates interactions with the Google Gemini web interface using Selenium.
-It can send prompts to Gemini and retrieve responses, simulating a text-based chatbot experience.
+This Python script automates interactions with the Google Gemini web interface using Selenium. It can send prompts and retrieve responses, simulating a text-based chatbot experience.
 
-This method offers significant advantages, especially when compared to free-tier Gemini API keys:
+🚀 Why Use This Script?
+This method offers significant advantages over free-tier Gemini API keys:
 
 ⚡ Blazing Fast Responses: Experience near real-time interactions! While free API keys can often take a fraction of a minute to generate responses, this script delivers responses in mere seconds by directly leveraging the optimized web interface.
 
-🚫 No Rate Limits: Unlike API keys that come with strict rate limits, this web-scraping approach bypasses such restrictions, allowing for more frequent and extensive use in your projects.
+🚫 No Rate Limits: Unlike API keys with strict rate limits, this web-scraping approach bypasses such restrictions, allowing for more frequent and extensive use in your projects.
 
 🔗 Backend Integration Ready: This script is ideal for integrating Gemini's capabilities into your backend projects, providing a powerful and free solution for automated text generation, content creation, or intelligent conversational agents.
 
-🛠 Crucial Initial Prompt for Seamless Experience
-The script includes an initial prompt:
+🛠️ Crucial Initial Prompt
+The script includes a critical initial prompt to ensure a seamless text-based experience:
 
-```
 behave like a strict text base chatbot , strictly don't use anything which is not text base for you like canvas , code editor etc don't even try to open canvas produce responces in plain text only even if they are code or json or anything
-```
-This prompt is essential as it instructs Gemini to respond purely in text.
-Without it, Gemini might attempt to use UI elements like "canvas" or "code editor," which can trigger a sign-out pop-up and lead to the loss of your entire conversation thread.
+This prompt is essential because it instructs Gemini to respond purely in text. Without it, Gemini might attempt to use UI elements like "canvas" or "code editor," which can trigger a sign-out pop-up and lead to the loss of your conversation.
 
-You can still modify the prompt by keeping this base text and adding more instructions to make the bot behave in a certain way — it currently behaves like a chatbot.
+You can modify this prompt by keeping the base text and adding more specific instructions to guide the bot's behavior.
 
-⚠ Note: This script relies on web scraping techniques and may cease to function if the Gemini web interface undergoes significant changes. It is provided "as-is" and its continued functionality is not guaranteed.
+⚠ Note: This script relies on web scraping techniques and may cease to function if the Gemini web interface undergoes significant changes. Its continued functionality is not guaranteed.
 
 ✨ Features
-- Automates sending messages to Gemini.
-- Captures and displays Gemini's responses.
-- Handles potential login pop-ups.
-- Runs in headless mode (no browser UI visible).
+Automates sending messages to Gemini.
+
+Captures and displays Gemini's responses.
+
+Handles potential login pop-ups.
+
+Runs in headless mode (no browser UI visible).
 
 📦 Prerequisites
 Before running the script, ensure you have Python installed.
 
 ⚙️ Installation
-1. Clone the repository or download the script files (`geminiBot.py`, `geminiColab.py`).
+Clone the repository or download the script files (geminiBot.py, geminiColab.py).
 
-2. Install the required Python packages:
+Install the required Python packages:
 
-```bash
+Bash
+
 pip install selenium webdriver-manager
-```
-
 💻 How to Run
-### Local Execution (`geminiBot.py`)
-1. Run the script from your terminal:
+Local Execution (geminiBot.py)
+Run the script from your terminal:
 
-```bash
+Bash
+
 python geminiBot.py
-```
-The script will open a headless Chrome browser, navigate to Gemini, send an initial prompt, and then enter a loop where you can type messages and receive responses.
+The script will open a headless Chrome browser, navigate to Gemini, send the initial prompt, and then enter a loop where you can type messages and receive responses.
 
-2. Type `exit` and press Enter to quit the chatbot.
+Type exit and press Enter to quit the chatbot.
 
-### Google Colab Execution (`geminiColab.py`)
-This script (`geminiColab.py`) is adapted for use in Google Colab environments. Here's how to use it:
+Google Colab Execution (geminiColab.py)
+This script is adapted for use in Google Colab.
 
-1. Upload `geminiColab.py` to your Colab notebook environment.
+Upload geminiColab.py to your Colab notebook environment.
 
-2. Install Dependencies in a Colab cell:
+Install dependencies in a Colab cell:
 
-```python
+Python
+
 !pip install selenium webdriver-manager
-```
+Run the script from a Colab cell:
 
-3. Run the script from a Colab cell:
+Python
 
-```python
 %run geminiColab.py
-```
-💡 For interactive use within a cell, you can copy the contents of `geminiColab.py` directly into a cell and execute it.
+💡 For interactive use, you can copy the contents of geminiColab.py directly into a Colab cell and execute it.
 
 ⚠ Note: The Colab file is under construction and may not work correctly.
 
+<div align="center">
+<img src="https://github.com/user-attachments/assets/580cbf32-688f-4a3e-bdc3-6cebf437353d" alt="Example of Gemini chatbot in action" width="800" />
+</div>
 
-<img width="2096" height="1182" alt="image" src="https://github.com/user-attachments/assets/580cbf32-688f-4a3e-bdc3-6cebf437353d" /> 
+🛠️ Troubleshooting
+selenium_logs.txt: Contains logs from Selenium for debugging.
 
-🛠 Troubleshooting
-- `selenium_logs.txt` – Contains logs from Selenium for debugging issues.
-- `page_source.html` & `screenshot.png` – Generated if a response isn't captured, showing the page’s HTML source and a screenshot for troubleshooting.
-- Element Not Found/Clickable – The Gemini UI may change, causing CSS selectors/XPaths to break. Update them in `geminiBot.py` or `geminiColab.py` (e.g., `div.ql-editor`, `button[aria-label="Send"]`).
+page_source.html & screenshot.png: Generated if a response isn't captured, showing the page’s HTML source and a screenshot for troubleshooting.
 
-
-
-
-
+Element Not Found/Clickable: The Gemini UI may change, causing CSS selectors/XPaths to break. Update them in geminiBot.py or geminiColab.py (e.g., div.ql-editor, button[aria-label="Send"]).
 
