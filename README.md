@@ -71,6 +71,7 @@ pip install selenium webdriver-manager
 ```
 <br>
 💻 How to Run
+
 ### Local Execution (`geminiBot.py`)
 1. Run the script from your terminal:
 
@@ -82,6 +83,7 @@ The script will open a headless Chrome browser, navigate to Gemini, send the ini
 2. Type `exit` and press Enter to quit the chatbot.
 <br>
 ### Google Colab Execution (`geminiColab.py`)
+<br>
 This script is adapted for use in Google Colab.
 
 1. Upload `geminiColab.py` to your Colab notebook environment.
@@ -112,6 +114,7 @@ This script is adapted for use in Google Colab.
 - `selenium_logs.txt`: Contains logs from Selenium for debugging.
 - `page_source.html` & `screenshot.png`: Generated if a response isn't captured, showing the page’s HTML source and a screenshot for troubleshooting.
 - Element Not Found/Clickable: The Gemini UI may change, causing CSS selectors/XPaths to break. Update them in `geminiBot.py` or `geminiColab.py` (e.g., `div.ql-editor`, `button[aria-label="Send"]`). 
+
 
 
 
